@@ -15,7 +15,7 @@
             android:adjustViewBounds="true"
             android:cropToPadding="false"
             android:scaleType="centerCrop"
-            android:src="@color/black"
+            android:src="@mipmap/add_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -23,6 +23,7 @@
             android:id="@+id/postTitleList"
             android:textSize="18sp"
             android:textStyle="bold"
+            android:padding="15dp"
             android:text="Post Title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -38,7 +39,7 @@
         <TextView
             android:id="@+id/timestampList"
             android:textSize="18sp"
-            android:padding="5dp"
+            android:padding="15dp"
             android:textStyle="italic"
             android:text="Time: "
             android:layout_width="match_parent"
