@@ -1,4 +1,4 @@
-package com.example.blogapp;
+package com.example.blogapp.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.blogapp.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -49,7 +50,8 @@ public class MainActivity extends AppCompatActivity {
                 mUser = firebaseAuth.getCurrentUser();
 
                 if(mUser != null){
-                    Toast.makeText(MainActivity.this, "Signed in", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(MainActivity.this, "Signed in", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(MainActivity.this, PostListActivity.class));
                 }else {
                     Toast.makeText(MainActivity.this, "Not signed in", Toast.LENGTH_LONG).show();
                 }

@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BlogApp">
         <activity
-            android:name=".PostListActivity"
+            android:name=".Activities.PostListActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
