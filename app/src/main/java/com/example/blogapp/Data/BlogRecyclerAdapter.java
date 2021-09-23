@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.blogapp.Model.Blog;
 import com.example.blogapp.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.Date;
 import java.util.List;
@@ -54,7 +55,9 @@ public class BlogRecyclerAdapter extends RecyclerView.Adapter<BlogRecyclerAdapte
         imageUrl = blog.getImage();
 
         //TODO: Use Picasso library to load image
+        Picasso.get().load(imageUrl).into(holder.image);
     }
+
 
     @Override
     public int getItemCount() {
